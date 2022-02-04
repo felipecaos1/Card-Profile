@@ -1,0 +1,125 @@
+:root {
+  --dark-cyan:hsl(185,75%,39%)
+;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background-color: var(--dark-cyan);
+  background-image:  url(./images/bg-pattern-bottom.svg),url(./images/bg-pattern-top.svg);
+  background-repeat: no-repeat,no-repeat;
+  background-position: right -60% top 50vh, left -60% bottom 50vh;
+  
+}
+@media (max-width:767px) {
+
+  body{
+    background-position: right -150vw top 50vh, left -150vw bottom 50vh;
+  }
+  
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  width: 326px;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 5px 5px rgba(54, 18, 18, 0.13);
+          box-shadow: 0px 5px 5px rgba(54, 18, 18, 0.13);
+}
+
+.card-header {
+  width: 100%;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+
+.card-body-imagen {
+  border-radius: 100%;
+  margin-top: -60px;
+  border: 5px solid white;
+  size: 96px;
+}
+
+.card-body-titulo {
+  font-size: 20px;
+}
+
+.card-body-titulo span {
+  color: grey;
+  font-weight: 400;
+  margin-left: 6px;
+}
+
+.card-body-text {
+  color: grey;
+}
+
+.card-pie {
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card-pie-social {
+  text-align: center;
+}
+
+.card-pie-likes {
+  text-align: center;
+}
+
+.card-pie-photos {
+  text-align: center;
+}
+
+.card-pie p {
+  margin-top: 0px;
+  letter-spacing: 1px;
+  color: rgb(207, 207, 207);
+  font-size: 12px;
+}
+
+.card-pie h3 {
+  margin-bottom: 0px;
+}
+/*# sourceMappingURL=estilos.css.map */
